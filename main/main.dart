@@ -7,14 +7,14 @@ void main() {
     final command = stdin.readLineSync()!;
     final rq = Rq(command);
 
-    if (command == 'exit') {
+    if (rq.command == 'exit') {
       break;
     }
   }
 }
 
 class Rq {
-  late String command;
+  late final command;
 
   Rq(String command) {
     this.command = command;
