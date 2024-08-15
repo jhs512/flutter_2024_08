@@ -5,5 +5,6 @@ void main() {
 
   String? command = stdin.readLineSync();
 
+  print("command.length: ${command?.length}");
   print("command: $command");
 }
