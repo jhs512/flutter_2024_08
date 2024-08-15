@@ -14,9 +14,7 @@ void main() {
 }
 
 class Rq {
-  late final command;
+  final String command;
 
-  Rq(String command) {
-    this.command = command;
-  }
+  Rq(this.command);
 }
