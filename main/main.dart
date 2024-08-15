@@ -15,6 +15,9 @@ void main() {
 
 class Rq {
   final String command;
+  late final int number;
 
-  Rq(this.command);
+  Rq(this.command) {
+    this.number = 100;
+  }
 }
