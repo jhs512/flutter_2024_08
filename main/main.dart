@@ -18,8 +18,11 @@ void main() {
 class Rq {
   final String command;
   final int _number;
+  final int _number2;
 
-  Rq(this.command) : this._number = 100;
+  Rq(this.command)
+      : this._number = 100,
+        this._number2 = 100;
 
   @override
   String toString() {
