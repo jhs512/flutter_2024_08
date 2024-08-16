@@ -7,6 +7,8 @@ void main() {
     final command = stdin.readLineSync()!;
     final rq = Rq(command);
 
+    print(rq);
+
     if (rq.command == 'exit') {
       break;
     }
@@ -15,9 +17,12 @@ void main() {
 
 class Rq {
   final String command;
-  late final int number;
+  final int _number;
 
-  Rq(this.command) {
-    this.number = 100;
+  Rq(this.command) : this._number = 100;
+
+  @override
+  String toString() {
+    return 'Rq{command: $command, number: $_number}';
   }
 }
